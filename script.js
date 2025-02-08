@@ -15,14 +15,25 @@ function generateRandom() {
 }
 
 // Function for the higher button
-function higher() {
-   
-}
-
-// Function for the lower button
-function lower() {
-   
-}
 
 //Generate a number to start the game!
+
+function higher() {
+    if (random < nextRandom) {
+        window.alert("Correct!")
+ } 
+    else if (random > nextRandom) {
+        window.alert("Incorrect")
+    }
+ generateRandom();
+}
+function lower() {
+if (random > nextRandom) {
+    window.alert("Correct!")
+
+}
+    else if (random < nextRandom) {
+        window.alert("Incorrect")
+    }
 generateRandom();
+}
